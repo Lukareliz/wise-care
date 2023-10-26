@@ -4,7 +4,9 @@ const Home = () => {
   return (
     <div>
       <Carrossel />
-      <div>Home</div>
+      <div className='title_main'>
+        <h1>Encontre cuidadores!</h1>
+      </div>
     </div>
     
   )
