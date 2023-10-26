@@ -1,5 +1,5 @@
- import NavBar from './components/navbar'
- import Carrossel from './components/sliderHome'
+import { Outlet } from 'react-router-dom'
+import NavBar from './components/navbar.jsx'
 
 import './App.css'
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Carrossel />
+      <Outlet />
     </div>
     
   )
