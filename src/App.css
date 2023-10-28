@@ -100,3 +100,15 @@
     color: white;
     cursor: pointer;
 }
+
+.register_container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007AEA;
+    width: 60%;
+    height: 60%;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+}
