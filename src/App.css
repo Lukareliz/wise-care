@@ -105,10 +105,38 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
     background-color: #007AEA;
     width: 60%;
     height: 60%;
     color: white;
     border-radius: 25px;
     margin-top: 20px;
+}
+
+.register_container div h3{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#icon_hire{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#icon_care{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#icon_hire:hover{
+    color: #00378A;
+}
+
+#icon_care:hover{
+    color: #00378A;
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function NavBar(){
     return(
         <nav id="navbar_container">
-            <img src=".\src\assets\logo_wisecare.png" alt="Nothing :(" />
+            <Link to="/"><img src="../src/assets/logo_wisecare.png" alt="Logo da WiseCare, uma lâmpada com bigode." /></Link>
             <h1>WiseCare</h1>
             <div className="navbar_links">
                 <Link to="/">Início</Link>
