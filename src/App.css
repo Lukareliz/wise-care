@@ -1,3 +1,4 @@
+/*RESET*/
 *{
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/*NAVBAR STYLES*/
 #navbar_container{
     display: flex;
     justify-content: space-around;
@@ -41,11 +43,13 @@
     color: #00378A;
 }
 
+/*MAIN TITLE ON THE PAGE STYLES*/
 .title_main{
     text-align: center;
     margin-top: 50px;
 }
 
+/*LOGIN SCREEN STYLES*/
 .auth_container{
     position: absolute;
     left: 50%;
@@ -101,6 +105,7 @@
     cursor: pointer;
 }
 
+/*CHOOSE REGISTER TYPE STYLES*/
 .register_container{
     position: absolute;
     left: 50%;
@@ -139,4 +144,52 @@
 
 #icon_care:hover{
     color: #00378A;
+}
+
+/*CARE REGISTER STYLES*/
+.register_care{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007AEA;
+    width: 60%;
+    height: 130%;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.register_care h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form_container label,
+.form_container input,
+.form_container textarea {
+    margin: 5px 0;
+    resize: none;
+
+}
+
+.form_container{
+    padding: 20px;
+}
+
+.form_container input,
+.form_container textarea {
+    width: 50%;
+    padding: 5px;
 }
