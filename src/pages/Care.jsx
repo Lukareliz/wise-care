@@ -1,4 +1,5 @@
 import NavBar from "../components/navbar"
+import ImageUpload from "../components/ImageUpload";
 
 const Care = () => {
   return (
@@ -8,6 +9,8 @@ const Care = () => {
       <div className="register_care">
         <h3>REGISTRAR</h3>
         <form action="" method="post" className="form_container">
+          <ImageUpload />
+
           <label htmlFor="nome">Nome Completo:*</label>
           <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
 

@@ -193,3 +193,41 @@
     width: 50%;
     padding: 5px;
 }
+
+.user_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    left: 65%;
+    top: 15%;
+}
+
+#photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    position: absolute;
+    right: 3%;
+    top: 70%;
+    height: 35px;
+    width: 35px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    background-color: #00378A;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0.644);
+}
+
+.camera_icon{
+    width: 20px;
+    height: 20px;
+}
