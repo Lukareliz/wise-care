@@ -1,4 +1,5 @@
 import NavBar from "../components/navbar"
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -13,6 +14,7 @@ const Login = () => {
             <input type="password" name="" id="" placeholder="Senha" />
             <div><input type="button" value="Entrar" className="buttons"/></div> 
           </form>
+          <h5>Se não tiver uma conta, <Link to="/register">clique aqui</Link>.</h5>
         </div>
       </div>
     </div>

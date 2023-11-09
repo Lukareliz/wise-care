@@ -8,6 +8,7 @@ import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Care from './pages/Care.jsx';
 import Hire from './pages/Hire.jsx';
+import About from './pages/About.jsx';
 
 import './index.css';
 
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/register' element={<Register />}/>
           <Route path='/register/care' element={<Care />}/>
           <Route path='/register/hire' element={<Hire />}/>
+          <Route path='/about' element={<About />}/>
         </Route>
       </Routes>
     </BrowserRouter>

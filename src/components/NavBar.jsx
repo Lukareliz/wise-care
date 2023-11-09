@@ -8,7 +8,7 @@ function NavBar(){
             <h1>WiseCare</h1>
             <div className="navbar_links">
                 <Link to="/">Início</Link>
-                <a href="">Sobre Nós</a>
+                <Link to="/about">Sobre Nós</Link>
                 <a href="">Contato</a>
                 <a href="">Políticas</a>
             </div>

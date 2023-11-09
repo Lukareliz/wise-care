@@ -13,10 +13,10 @@ function ImageUpload() {
 
     return (
         <div className="user_img">
-            {image ? <img src={URL.createObjectURL(image)} className="user_img"/> : <img src="../src/assets/user-image-default.png" alt="" id="photo" />}
-            <input type="file" name="" id="file" ref={inputRef} onChange={handleImageChange}/>
-            <label htmlFor="file" id="uploadBtn"><ImCamera className="camera_icon"/></label>
-          </div>
+            {image ? <img src={URL.createObjectURL(image)} className="user_img" /> : <img src="../src/assets/user-image-default.png" alt="" id="photo" />}
+            <input type="file" name="" id="file" ref={inputRef} onChange={handleImageChange} />
+            <label htmlFor="file" id="uploadBtn"><ImCamera className="camera_icon" /></label>
+        </div>
     )
 }
 
