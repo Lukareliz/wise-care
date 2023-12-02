@@ -24,16 +24,16 @@ class Carrossel extends React.Component {
       };
   
       return (
-        <div>
+        <div id='slick_slider'>
           <Slider {...settings}>
             <div>
-              <img src="./src/assets/slide1.jpg" alt="" style={sliderStyle}/>
+              <img src="./src/assets/slide1.jpg" alt="Vamos Juntos. WiseCare." style={sliderStyle}/>
             </div>
             <div>
-                <img src="./src/assets/slide2.jpg" alt="" style={sliderStyle}/>            
+                <img src="./src/assets/slide2.jpg" alt="Plataforma de home care." style={sliderStyle}/>            
             </div>
             <div>
-                <img src="./src/assets/slide3.jpg" alt="" style={sliderStyle}/>            
+                <img src="./src/assets/slide3.jpg" alt="Qualidade, segurança e transparência. Acesse noss plataforma e encontre a melhor opção para a sua necessidade." style={sliderStyle}/>            
             </div>
           </Slider>
         </div>

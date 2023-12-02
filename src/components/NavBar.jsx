@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ImMenu } from "react-icons/im";
 
 
 function NavBar(){
@@ -16,6 +17,7 @@ function NavBar(){
                 <Link to="/login">Entrar </Link>|
                 <Link to="/register"> Registrar</Link>
             </div>
+            <ImMenu id="menu_icon"/>
         </nav>
     )
 }

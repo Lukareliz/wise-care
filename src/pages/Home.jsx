@@ -1,5 +1,5 @@
 import Carrossel from '../components/sliderHome.jsx'
-import NavBar from '../components/navbar.jsx'
+import NavBar from '../components/NavBar.jsx'
 
 const Home = () => {
   return (

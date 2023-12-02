@@ -43,6 +43,12 @@
     color: #00378A;
 }
 
+#menu_icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
 /*MAIN TITLE ON THE PAGE STYLES*/
 .title_main{
     text-align: center;
@@ -167,7 +173,7 @@
     transform: translateX(-50%);
     background-color: #007AEA;
     width: 40%;
-    height: 215%;
+    height: 235%;
     color: white;
     border-radius: 25px;
     margin-top: 20px;
@@ -237,3 +243,31 @@
     width: 20px;
     height: 20px;
 }
+
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 720px) {
+    /*NAVBAR*/
+    .navbar_links, .navbar_login{
+        display: none;
+    }
+
+    #navbar_container img{
+        width: 60px;
+    }
+
+    #navbar_container h1{
+        display: none;
+    }
+
+    /*SLIDER*/
+    #slick_slider{
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 721px) {
+    #menu_icon{
+        display: none;
+    }
+  }
