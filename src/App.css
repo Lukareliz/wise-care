@@ -294,6 +294,42 @@
     #slick_slider{
         display: none;
     }
+
+    /*LOGIN SCREEN*/
+    .auth_container{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .title_main{
+        margin-top: 25px;
+    }
+
+    .auth_inputs{
+        height: 350px;
+    }
+
+    .auth_inputs h3{
+        font-size: 25px;
+    }
+
+    .auth_inputs input{
+        height: 30%;
+        font-size: 20px;
+    }
+
+    .auth_inputs .buttons{
+        width: 120px;
+        height: 50px;
+        border-radius: 15px;
+        border-style: none;
+        margin-top: 20px;
+    }
+
+    .auth_inputs h5{
+        margin-top: 70px;
+        font-size: 20px;
+    }
   }
 
   @media only screen and (min-width: 721px) {
