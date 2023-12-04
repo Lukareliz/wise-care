@@ -6,9 +6,7 @@ const Home = () => {
     <div>
       <NavBar />
       <Carrossel />
-      <div className='title_main'>
-        <h1>Encontre cuidadores!</h1>
-      </div>
+      <h1 className='title_main'>Encontre cuidadores!</h1>
     </div>
     
   )
