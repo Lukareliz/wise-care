@@ -25,8 +25,8 @@ function NavBar() {
                 <div className="navbar_links">
                     <Link to="/">Início</Link>
                     <Link to="/about">Sobre Nós</Link>
-                    <a href="">Contato</a>
-                    <a href="">Políticas</a>
+                    <Link to="/contact">Contato</Link>
+                    <Link to="/policies">Políticas</Link>
                 </div>
                 <div className="navbar_login">
                     <Link to="/login">Entrar </Link>|

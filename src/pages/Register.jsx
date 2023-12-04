@@ -1,4 +1,4 @@
-import NavBar from "../components/navbar"
+import NavBar from "../components/NavBar"
 import { Link } from "react-router-dom"
 import { ImHipster2 } from "react-icons/im";
 import { ImHeart } from "react-icons/im";

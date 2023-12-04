@@ -67,6 +67,18 @@
     color: white;
 }
 
+#menu_list a:nth-child(5){
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #00378A;
+}
+
+#menu_list a:nth-child(6){
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #00378A;
+}
+
 /*MAIN TITLE ON THE PAGE STYLES*/
 .title_main{
     text-align: center;
