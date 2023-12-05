@@ -1,5 +1,5 @@
 /*RESET*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 /*NAVBAR STYLES*/
-#navbar_container{
+#navbar_container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,41 +15,41 @@
     height: 70px;
 }
 
-#navbar_container img{
+#navbar_container img {
     width: 70px;
 }
 
-#navbar_container h1{
+#navbar_container h1 {
     color: white;
 }
 
-.navbar_links a{
+.navbar_links a {
     margin-right: 30px;
     text-decoration: none;
     color: white;
     font-size: 15px;
 }
 
-.navbar_links a:hover{
+.navbar_links a:hover {
     color: #00378A;
 }
 
-.navbar_login a{
+.navbar_login a {
     color: white;
     text-decoration: none;
 }
 
-.navbar_login a:hover{
+.navbar_login a:hover {
     color: #00378A;
 }
 
-#menu_icon{
+#menu_icon {
     width: 30px;
     height: 30px;
     color: white;
 }
 
-#menu_list{
+#menu_list {
     background-color: #005eeb;
     display: flex;
     flex-direction: column;
@@ -62,31 +62,31 @@
     z-index: 1;
 }
 
-#menu_list a{
+#menu_list a {
     text-decoration: none;
     color: white;
 }
 
-#menu_list a:nth-child(5){
+#menu_list a:nth-child(5) {
     border-radius: 10px;
     padding: 10px;
     background-color: #00378A;
 }
 
-#menu_list a:nth-child(6){
+#menu_list a:nth-child(6) {
     border-radius: 10px;
     padding: 10px;
     background-color: #00378A;
 }
 
 /*MAIN TITLE ON THE PAGE STYLES*/
-.title_main{
+.title_main {
     text-align: center;
     margin-top: 50px;
 }
 
 /*LOGIN SCREEN STYLES*/
-.auth_container{
+.auth_container {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -100,26 +100,26 @@
     margin-top: 20px;
 }
 
-.auth_container h3{
-   text-align: center;
-   margin-bottom: 20px;
+.auth_container h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.auth_container h5{
+.auth_container h5 {
     text-align: center;
     margin-top: 30px;
- }
+}
 
- .auth_container a{
+.auth_container a {
     text-decoration: none;
     color: white;
- }
+}
 
- .auth_container a:hover{
+.auth_container a:hover {
     color: #00378A;
- }
+}
 
-.auth_inputs{
+.auth_inputs {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -128,7 +128,7 @@
     width: 250px;
 }
 
-.auth_inputs input{
+.auth_inputs input {
     margin-top: 20px;
     width: 250px;
     height: 30px;
@@ -136,12 +136,12 @@
     padding: 10px;
 }
 
-.auth_inputs div{
+.auth_inputs div {
     display: flex;
     justify-content: center;
 }
 
-.auth_inputs .buttons{
+.auth_inputs .buttons {
     width: 100px;
     height: 40px;
     border-radius: 15px;
@@ -149,20 +149,20 @@
     margin-top: 20px;
 }
 
-.buttons:hover{
+.buttons:hover {
     background-color: #00378A;
     color: white;
     cursor: pointer;
 }
 
 /*CHOOSE REGISTER TYPE STYLES*/
-.register_container{
+.register_container {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     background-color: #007AEA;
     width: 60%;
     height: 60%;
@@ -171,33 +171,33 @@
     margin-top: 20px;
 }
 
-.register_container div h3{
+.register_container div h3 {
     text-align: center;
     margin-top: 15px;
 }
 
-#icon_hire{
+#icon_hire {
     color: white;
     width: 100px;
     height: 100px;
 }
 
-#icon_care{
+#icon_care {
     color: white;
     width: 100px;
     height: 100px;
 }
 
-#icon_hire:hover{
+#icon_hire:hover {
     color: #00378A;
 }
 
-#icon_care:hover{
+#icon_care:hover {
     color: #00378A;
 }
 
 /*CARE REGISTER STYLES*/
-.register_care{
+.register_care {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -208,7 +208,7 @@
     margin-top: 20px;
 }
 
-.register_care h3{
+.register_care h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
@@ -236,23 +236,23 @@
     padding: 5px;
 }
 
-.user_img{
+.user_img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-#photo{
+#photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-#file{
+#file {
     display: none;
 }
 
-#uploadBtn{
+#uploadBtn {
     display: flex;
     justify-content: center;
     height: 35px;
@@ -268,63 +268,142 @@
     top: 15%;
 }
 
-.camera_icon{
+.camera_icon {
     width: 20px;
     height: 20px;
 }
 
-.imgUp{
+.imgUp {
     display: flex;
     justify-content: center;
 }
 
+/*ABOUT STYLES*/
+.event-text {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+}
+
+.event-text h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.event-text p {
+    color: #58575a;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.event-text p strong {
+    font-weight: bold;
+    color: black;
+}
+
+.event-text p strong::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+/*CONTACTS STYLES*/
+.contacts_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts_container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_container h2 {
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+#contactIcon1,
+#contactIcon2,
+#contactIcon3 {
+    width: 100px;
+    height: 100px;
+    color: #00378A;
+}
+
+/*POLICIES STYLES*/
+.privacy-policy {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.privacy-policy h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.privacy-policy p {
+    margin: 15px 0;
+}
+
+.privacy-policy p span::before {
+    content: "•";
+    margin-right: 5px;
+}
 
 /*MOBILE VIEW*/
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 720px) {
+
     /*NAVBAR*/
-    .navbar_links, .navbar_login{
+    .navbar_links,
+    .navbar_login {
         display: none;
     }
 
-    #navbar_container img{
+    #navbar_container img {
         width: 60px;
     }
 
-    #navbar_container h1{
+    #navbar_container h1 {
         display: none;
     }
 
     /*SLIDER*/
-    #slick_slider{
+    #slick_slider {
         display: none;
     }
 
     /*LOGIN SCREEN*/
-    .auth_container{
+    .auth_container {
         width: 100%;
         height: 490px;
         border-radius: 0px;
     }
 
-    .title_main{
+    .title_main {
         margin-top: 25px;
         font-size: 30px;
     }
 
-    .auth_inputs{
+    .auth_inputs {
         height: 350px;
     }
 
-    .auth_inputs h3{
+    .auth_inputs h3 {
         font-size: 25px;
     }
 
-    .auth_inputs input{
+    .auth_inputs input {
         height: 25%;
         font-size: 15px;
     }
 
-    .auth_inputs .buttons{
+    .auth_inputs .buttons {
         width: 120px;
         height: 50px;
         border-radius: 15px;
@@ -332,39 +411,57 @@
         margin-top: 20px;
     }
 
-    .auth_inputs h5{
+    .auth_inputs h5 {
         margin-top: 70px;
         font-size: 20px;
     }
 
     /*REGISTER TYPE SCREEN*/
-    .register_container{
+    .register_container {
         width: 100%;
         border-radius: 0px;
     }
 
     /*CARE REGISTER SCREEN*/
-    .register_care{
+    .register_care {
         width: 100%;
         border-radius: 0PX;
     }
 
-    .form_container input{
+    .form_container input {
         font-size: 15px;
         height: 50px;
     }
 
-    #uploadBtn{
+    #uploadBtn {
         position: absolute;
         width: 40px;
         height: 40px;
         top: 12%;
-        
-    }
-  }
 
-  @media only screen and (min-width: 721px) {
-    #menu_icon{
+    }
+
+    /*ABOUT SCREEN*/
+    .event-text {
+        width: 100%;
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .event-text p {
+        font-size: 20px;
+    }
+
+    /*CONTACT SCREEN*/
+    .contacts_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    #menu_icon {
         display: none;
     }
-  }
+}
