@@ -2,6 +2,9 @@ import NavBar from "../components/NavBar"
 import ImageUpload from "../components/ImageUpload";
 
 const Care = () => {
+
+  let teste = "";
+
   return (
     <div>
       <NavBar />
