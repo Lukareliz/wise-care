@@ -2,11 +2,13 @@ import { useState } from "react";
 import ImageUpload from "../components/ImageUpload";
 import NavBar from "../components/NavBar";
 
-const url = import.meta.env.VITE_API_URL + "/usuario/addusuario";
+const endpoint = import.meta.env.VITE_API_URL +  "/usuario/addusuario";
 
 
 const Care = () => {
 
+
+//console.log(url)
 
 
   // Atributos do usuário
@@ -42,6 +44,7 @@ const Care = () => {
     pais: "",
   };
 
+    // Variaveis para desabilitar os campos de input de endereço
   const boolCamposEndereco = {
     disableLogadouro: false,
     disableBairro: false,
@@ -55,7 +58,7 @@ const Care = () => {
   const [objEndereco, setEndereco] = useState(endereco);
   const [controleEnderecoInput, setDisableOrEnable] = useState(boolCamposEndereco);
 
-  // Variaveis para desabilitar os campos de input de endereço
+
 
 
   // const valorDigitado = (eventKeyUp) => {
@@ -113,10 +116,10 @@ const Care = () => {
     }
 
 
-    const enviaCadastro = (event) => {
-      event.preventDefault(); // Previne o comportamento padrão de recarregar a página
-      //console.log(objUsuario);
-      fetch(url, {
+    const enviaCadastro = () => {
+      //event.preventDefault(); // Previne o comportamento padrão de recarregar a página
+      console.log(objUsuario);
+      fetch(endpoint, {
         method: 'post',
         body: JSON.stringify(objUsuario),
         headers: {
@@ -128,10 +131,12 @@ const Care = () => {
         .then(valorConvertido => { console.log(valorConvertido) })
     };
 
-    // console.log("\n o valor e:", JSON.stringify(objEndereco))
+    //console.log("\n o valor e:", JSON.stringify(objUsuario))
 
     // Randeriza a pagina HTML do componente
     return (
+
+
       <div>
         <NavBar />
         <h1 className="title_main">Cuidador, crie sua conta WiseCare!</h1>
@@ -141,10 +146,13 @@ const Care = () => {
             <ImageUpload />
           </div>
 
-
-          <form action="" method="post" className="form_container">
+          <h1>{import.meta.env.VITE_TEST_VAR}</h1>
+          
+         
+          <form action=""  method="post" className="form_container">
             <label htmlFor="nome">Nome Completo:*</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required  value={objUsuario.nome}
+            onChange={(evento) => setUsuario({ ...objUsuario, nome: evento.target.value })}/>
 
             <label htmlFor="email">E-mail:*</label>
             <input type="email" name="email" placeholder="Seu e-mail" required />
@@ -214,7 +222,7 @@ const Care = () => {
             <label htmlFor="sobre">Sobre:</label>
             <textarea name="sobre" cols="30" rows="10" placeholder="Escreva sobre você"></textarea>
 
-            <input type="submit" value="Registrar" className="buttons" />
+            <input type="submit"  value="Registrar" className="buttons" />
           </form>
         </div>
       </div>
