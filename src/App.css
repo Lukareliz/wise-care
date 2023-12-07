@@ -356,21 +356,6 @@
     margin-right: 5px;
 }
 
-.div{
-    height: 80vh;
-}
-
-/*FOOTER*/
-footer {
-    padding: 10px;
-    background-color: #007AEA;
-    color: #fff;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*MOBILE VIEW*/
 @media only screen and (max-width: 720px) {
 
