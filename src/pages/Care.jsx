@@ -2,7 +2,7 @@ import { useState } from "react";
 import ImageUpload from "../components/ImageUpload";
 import NavBar from "../components/NavBar";
 
-const endpoint = import.meta.env.VITE_API_URL + "/usuario/addusuario";
+const endpoint = import.meta.env.VITE_API_URL + "/usuario/cadusuario";
 
 
 const Care = () => {
