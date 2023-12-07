@@ -156,6 +156,9 @@ const Care = () => {
 
             <label htmlFor="email">E-mail:*</label>
             <input type="email" name="email" placeholder="Seu e-mail" required />
+            
+            <label htmlFor="cpf">CPF:*</label>
+            <input type="text" name="cpf" placeholder="Seu CPF" required />
 
             <label htmlFor="telefone">Telefone:*</label>
             <input type="tel" name="telefone" placeholder="()xxxx-xxxx" required />
@@ -206,13 +209,24 @@ const Care = () => {
 
             <label htmlFor="genero">Gênero:*</label>
             <select id="genero" name="genero" required>
+              <option value="">-</option>
               <option value="feminino">Feminino</option>
               <option value="masculino">Masculino</option>
               <option value="outro">Outro</option>
             </select>
+            
+            <label htmlFor="tipoSanguineo">Tipo sanguíneo:*</label>
+            <select id="tipoSang" name="tipoSanguineo" required>
+              <option value="">-</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="O">O</option>
+              <option value="AB">AB</option>
+            </select>
 
             <label htmlFor="status">Status atual:*</label>
             <select id="status" name="status" required>
+              <option value="">-</option>
               <option value="disponivel">Disponível</option>
               <option value="ocupado">Ocupado</option>
             </select>
