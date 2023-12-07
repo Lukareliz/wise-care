@@ -160,8 +160,11 @@ const Care = () => {
             <label htmlFor="cpf">CPF:*</label>
             <input type="text" name="cpf" placeholder="Seu CPF" required />
 
+            <label htmlFor="telefone">DDD:*</label>
+            <input type="tel" name="ddd" placeholder="DDD" required />
+
             <label htmlFor="telefone">Telefone:*</label>
-            <input type="tel" name="telefone" placeholder="()xxxx-xxxx" required />
+            <input type="tel" name="telefone" placeholder="Seu nº de celular" required />
 
             <label htmlFor="cep">CEP:*</label>
             <input type="text" name="cep" placeholder="Seu CEP" onChange={buscaEndereco}
@@ -204,8 +207,8 @@ const Care = () => {
               onChange={(evento) => setEndereco({ ...objEndereco, pais: evento.target.value })}
               placeholder="Seu país" required />
 
-            <label htmlFor="idade">Idade:</label>
-            <input type="date" name="idade" />
+            <label htmlFor="idade">Data de nascimento:*</label>
+            <input type="date" name="idade" required/>
 
             <label htmlFor="genero">Gênero:*</label>
             <select id="genero" name="genero" required>
