@@ -149,13 +149,17 @@ const Care = () => {
           <input type="text" id="nome" name="nome" placeholder="Seu nome" required value={objUsuario.nome}
             onChange={(evento) => setUsuario({ ...objUsuario, nome: evento.target.value })} />
 
-          <label htmlFor="email">E-mail:*</label>
-          <input type="email" name="email" placeholder="Seu e-mail" required value={objUsuario.email}
-            onChange={(evento) => setUsuario({ ...objUsuario, email: evento.target.value })}/>
+            <label htmlFor="email">E-mail:*</label>
+            <input type="email" name="email" placeholder="Seu e-mail" required />
+            
+            <label htmlFor="cpf">CPF:*</label>
+            <input type="text" name="cpf" placeholder="Seu CPF" required />
 
-          <label htmlFor="telefone">Telefone:*</label>
-          <input type="tel" name="telefone" maxLength={11} placeholder="()xxxx-xxxx" required value={objUsuario.telefone}
-            onChange={(evento) => setUsuario({ ...objUsuario, telefone: evento.target.value })}/>
+            <label htmlFor="telefone">DDD:*</label>
+            <input type="tel" name="ddd" placeholder="DDD" required />
+
+            <label htmlFor="telefone">Telefone:*</label>
+            <input type="tel" name="telefone" placeholder="Seu nº de celular" required />
 
           <label htmlFor="cep">CEP:*</label>
           <input type="text" name="cep" maxLength={8} placeholder="Seu CEP" onChange={buscaEndereco}
@@ -199,25 +203,32 @@ const Care = () => {
             onChange={(evento) => setEndereco({ ...objEndereco, pais: evento.target.value })}
             placeholder="Seu país" required />
 
-          <label htmlFor="idade">Idade:</label>
-          <input type="date" name="idade" value={objUsuario.idade}
-            onChange={(evento) => setUsuario({ ...objUsuario, idade: evento.target.value })}/>
+            <label htmlFor="idade">Data de nascimento:*</label>
+            <input type="date" name="idade" required/>
 
-          <label htmlFor="genero" >Gênero:*</label>
-          <select id="genero" name="genero" required value={objUsuario.genero} 
-           onChange={(evento) => setUsuario({ ...objUsuario, genero: evento.target.value })} >
-            <option value="feminino">Feminino</option>
-            <option value="masculino">Masculino</option>
-            <option value="outro">Outro</option>
-          </select>
+            <label htmlFor="genero">Gênero:*</label>
+            <select id="genero" name="genero" required>
+              <option value="">-</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+              <option value="outro">Outro</option>
+            </select>
+            
+            <label htmlFor="tipoSanguineo">Tipo sanguíneo:*</label>
+            <select id="tipoSang" name="tipoSanguineo" required>
+              <option value="">-</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="O">O</option>
+              <option value="AB">AB</option>
+            </select>
 
-          <label htmlFor="status">Status atual:*</label>
-          <select id="status" name="status" required 
-          value={objUsuario.status} 
-          onChange={(evento) => setUsuario({ ...objUsuario, status: evento.target.value })} >
-            <option value="disponivel">Disponível</option>
-            <option value="ocupado">Ocupado</option>
-          </select>
+            <label htmlFor="status">Status atual:*</label>
+            <select id="status" name="status" required>
+              <option value="">-</option>
+              <option value="disponivel">Disponível</option>
+              <option value="ocupado">Ocupado</option>
+            </select>
 
 
 
