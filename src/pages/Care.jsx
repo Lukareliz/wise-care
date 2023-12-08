@@ -133,7 +133,7 @@ const Care = () => {
 
 console.log(objUsuario)
     //console.log(JSON.stringify(objUsuario));
-    fetch('https://webhook-test.com/99b356fd7894238ddaaab3cf7eb32bad', {
+    fetch(endpoint, {
       method: 'post',
       body: JSON.stringify(objUsuario),
       headers: {
