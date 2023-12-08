@@ -296,6 +296,7 @@ console.log(JSON.stringify(objUsuario))
                 placeholder="Digite seu coren" />
             </>
           )}
+
           <label htmlFor="status">Status atual:*</label>
           <select id="status" name="status" required
             value={objUsuario.status}
